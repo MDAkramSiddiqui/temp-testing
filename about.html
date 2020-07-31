@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand nav-heading" href="index.html">
+          <h1>Blog For Fun</h1>
+        </a>
+        <a class="nav-link" href="#">About</a>
+      </nav>
+    </header>
+
+    <div class="dropper">
+      <a href="#"
+        ><img src="vendors/icons/down-arrow.svg" alt="dropper" class="arrow"
+      /></a>
+    </div>
+
+    <div class="content">
+      <h1 class="blog-h1">
+        Profile
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="pic-div">
+              <img
+                src="vendors/img/naruto.jpg"
+                alt="profile pic"
+                class="profile-pic"
+              />
+            </div>
+          </div>
+          <div class="col profile-info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatibus molestiae quas possimus corrupti sapiente repellat?
+            Placeat est culpa, nobis atque iste voluptates porro ut quas quae
+            fugiat eum explicabo sunt?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="card text-center">
+        <div class="card-header">
+          Blog 4 Fun
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Support</h5>
+
+          <p class="card-text">
+            Icons made by
+            <a href="https://www.flaticon.com/authors/google" title="Google"
+              >Google</a
+            >
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
+
+            <br />
+
+            Styling made by Boostrap from
+            <a href="https://getbootstrap.com/" title="Flaticon"
+              >www.getbootstrap.com</a
+            >
+          </p>
+        </div>
+        <div class="card-footer text-muted js-date"></div>
+      </div>
+    </footer>
+
+    <!-- Start VWO Async Smartcode -->
+    <script type="text/javascript">
+      window._vwo_code =
+        window._vwo_code ||
+        (function () {
+          var account_id = 515724,
+            settings_tolerance = 2000,
+            library_tolerance = 2500,
+            use_existing_jquery = false,
+            is_spa = 1,
+            hide_element = "body",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            d = document,
+            code = {
+              use_existing_jquery: function () {
+                return use_existing_jquery;
+              },
+              library_tolerance: function () {
+                return library_tolerance;
+              },
+              finish: function () {
+                if (!f) {
+                  f = true;
+                  var a = d.getElementById("_vis_opt_path_hides");
+                  if (a) a.parentNode.removeChild(a);
+                }
+              },
+              finished: function () {
+                return f;
+              },
+              load: function (a) {
+                var b = d.createElement("script");
+                b.src = a;
+                b.type = "text/javascript";
+                b.innerText;
+                b.onerror = function () {
+                  _vwo_code.finish();
+                };
+                d.getElementsByTagName("head")[0].appendChild(b);
+              },
+              init: function () {
+                window.settings_timer = setTimeout(
+                  "_vwo_code.finish()",
+                  settings_tolerance
+                );
+                var a = d.createElement("style"),
+                  b = hide_element
+                    ? hide_element +
+                      "{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}"
+                    : "",
+                  h = d.getElementsByTagName("head")[0];
+                a.setAttribute("id", "_vis_opt_path_hides");
+                a.setAttribute("type", "text/css");
+                if (a.styleSheet) a.styleSheet.cssText = b;
+                else a.appendChild(d.createTextNode(b));
+                h.appendChild(a);
+                this.load(
+                  "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                    account_id +
+                    "&u=" +
+                    encodeURIComponent(d.URL) +
+                    "&f=" +
+                    +is_spa +
+                    "&r=" +
+                    Math.random()
+                );
+                return settings_timer;
+              },
+            };
+          window._vwo_settings_timer = code.init();
+          return code;
+        })();
+    </script>
+    <!-- End VWO Async Smartcode -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
